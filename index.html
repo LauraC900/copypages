@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="logo" >
+         <a id="logo__text"  href="#">
+             <img id="logo__t" src="images/logoText.png" alt="">
+         </a>
+    </header>
+    
+    <nav class="navbar trans">
+        <ul>
+            <li>
+                <a class="trans" href="#">Home</a>
+            </li>
+            <li>
+                <a class="trans" href="#">Shop</a>
+            </li>
+            <li>
+                <a class="trans" href="#">About</a>
+            </li>
+            <li>
+                <a class="trans" href="#">Press</a>
+            </li>
+            <li>
+                <a class="trans" href="#">Contact</a>
+            </li>
+            <li>
+                <a class="trans" href="#">Stockists</a>
+            </li>
+            <li>
+                <a class="trans" href="#">Policies</a>
+            </li>
+            <li>
+                <a class="trans" href="#">Newsletter</a>
+            </li>
+        </ul>
+        <a class="navbar__cart" href="#">
+            <img src="images/cartBag.png" alt="">
+        </a>
+        <div class="navbar__currency">
+            <p>
+                prices show in
+                <select name="currencies" id="currencies">
+                    <option value="USD" selected="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CAD">CAD</option>
+                    <option value="NZD">NZD</option>
+                    <option value="AUD">AUD</option>
+                </select>
+            </p>
+        </div>
+    </nav>
+
+    <main>
+        <div class="home">
+            
+            <div class="home__slider">
+                <figure>
+                 <img src="/images/image1.jpg" alt="">
+                 <img src="/images/image2.jpg" alt="">  
+                 <img src="/images/image1.jpg" alt="">  
+                 <img src="/images/image2.jpg" alt="">  
+                 <img src="/images/image1.jpg" alt=""> 
+                </figure>   
+            </div>
+                     <h2>Featured Things</h2>
+
+            <div class="home__featured">
+                <div class="home__featuredItem">
+                    <img src="images/image1.jpg" alt="">
+                    <h2>Couch</h2>
+                    <h3 class="home__featuredItemPrice">$118.50</h3>
+                </div>
+                <div class="home__featuredItem">
+                    <img src="images/image1.jpg" alt="">
+                    <h2>Couch</h2>
+                    <h3 class="home__featuredItemPrice">$118.50</h3>
+                </div>
+                <div class="home__featuredItem"> 
+                    <img src="images/image1.jpg" alt="">
+                    <h2>Couch</h2>
+                    <h3 class="home__featuredItemPrice">$118.50</h3>
+                </div>
+                <div class="home__featuredItem">
+                    <img src="images/image1.jpg" alt="">
+                    <h2>Couch</h2>
+                    <h3 class="home__featuredItemPrice">$118.50</h3>
+                </div>
+                <div class="home__featuredItem">
+                    <img src="images/image1.jpg" alt="">
+                    <h2>Couch</h2>
+                    <h3 class="home__featuredItemPrice">$118.50</h3>
+                </div>
+                <div class="home__featuredItem">
+                    <img src="images/image1.jpg" alt="">
+                    <h2>Couch</h2>
+                    <h3 class="home__featuredItemPrice">$118.50</h3>
+                </div>
+            </div>
+          
+        </div>
+    </main>
+    
+    <script >
+
+
+       window.addEventListener("scroll",() => {
+           if(scrollY > 240){
+               document.getElementById("logo__text").style.transform = "translateY(-300px)" 
+          }else{
+            document.getElementById("logo__text").style.transform = "";
+           }
+       })
+    </script>
+</body>
+</html>
